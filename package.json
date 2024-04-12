@@ -21,6 +21,7 @@
     "nodemon": "^3.1.0"
   },
   "dependencies": {
+    "dotenv-load": "^3.0.0",
     "pg": "^8.11.4"
   }
 }

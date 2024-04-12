@@ -1,21 +1,32 @@
 const express = require('express')
-const pg = require('pg')
+const { Client } = require("pg");
 
 const app = express()
 
-const client = new pg.Client({
-    host: 'satao.db.elephantsql.com',
-    port: 5432,
-    database: 'arkshjud',
-    user: 'arkshjud',
-    password: 'tUrv3Rmq0o40h8Dd5tfS8ZP_s6IR0dcv',
-})
+const client = new Client({
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    database: process.env.DB_NAME,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+  });
 client.connect(function(error){
     if(error !== null){
         console.log('Cannot connect to database', error)
     } else {
         console.log('Connected to database')
     }
+})
+
+//test DB
+app.get("/test", async (req, res) => {
+    const data = await client.query(` SELECT * FROM admin`);
+    res.status(200).json(data.rows);
+  });
+
+const PORT = 3000
+app.listen(PORT, ()=>{
+    console.log(`Dijalankan di localhost:${PORT}`)
 })
 // // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
