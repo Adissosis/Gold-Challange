@@ -1,0 +1,15 @@
+{
+    "dialect": "postgres",
+    "host": "satao.db.elephantsql.com",
+    "port": 5432,
+    "database": "tutytyth",
+    "username": "tutytyth",
+    "password": "ovrWyZOZqO-8SnZMfePVNn6ttmAnJbJP",
+    "caseProp": "l",
+    "caseFile": "c", 
+    "singularize": true,
+    "additional": {
+        "timestamps": false
+    },
+    "tables": []
+}

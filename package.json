@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "dotenv-load nodemon",
+    "generate-model": "sequelize-auto -o './models' --config ./autoconfig.json"
   },
   "repository": {
     "type": "git",
