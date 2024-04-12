@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const PORT = (process.env.PORT || '3000');
 const { Client } = require("pg");
 
 const app = express()
@@ -24,7 +25,6 @@ app.get("/test", async (req, res) => {
     res.status(200).json(data.rows);
   });
 
-const PORT = 3000
 app.listen(PORT, ()=>{
     console.log(`Dijalankan di localhost:${PORT}`)
 })
