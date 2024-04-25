@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "dotenv-load nodemon",
-    "generate-model": "sequelize-auto -o './models' --config ./autoconfig.json"
+    "generate-model": "sequelize-auto -o './models' --config ./configauto.json"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,11 @@
     "sequelize-auto": "^0.8.8"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "path": "^0.12.7",
     "pg": "^8.11.4",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.2"

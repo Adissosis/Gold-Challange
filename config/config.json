@@ -1,0 +1,17 @@
+{
+  "development": {
+    "database": "tutytyth",
+    "host": "satao.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "tutytyth",
+    "host": "satao.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "database": "tutytyth",
+    "host": "satao.db.elephantsql.com",
+    "dialect": "postgres"
+  }
+}

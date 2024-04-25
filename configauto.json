@@ -6,10 +6,10 @@
     "username": "tutytyth",
     "password": "ovrWyZOZqO-8SnZMfePVNn6ttmAnJbJP",
     "caseProp": "l",
+    "caseModel": "c",
     "caseFile": "c", 
     "singularize": true,
     "additional": {
         "timestamps": false
-    },
-    "tables": []
+    }
 }
