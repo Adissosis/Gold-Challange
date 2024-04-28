@@ -1,0 +1,43 @@
+.gradient-custom {
+    background: linear-gradient(
+      #F3D32A,
+      #E1CE6C,
+      rgba(245, 244, 233, 0)
+    );
+  }
+
+.navbar {
+    background-color: #F3D32A;
+}
+.navbar .container-fluid {
+    justify-content: flex-end; /* Mengatur posisi elemen ke kanan */
+    align-items: center; /* Mengatur posisi vertikal elemen ke tengah */
+    padding-top: 1rem; /* Menambahkan ruang di atas navbar */
+    padding-left: 2rem;
+    color: black;
+}
+.search-bar {
+    flex-grow: 1; /* Membuat input pencarian mengisi semua ruang yang tersedia */   
+    margin-right: 1rem; /* Menambahkan jarak ke kanan dari elemen sebelumnya (input) */
+}
+.profile {
+    margin-left: 1rem; /* Menambahkan jarak dari elemen sebelah kiri */
+}
+.container-xxl {
+    background: #929292;
+    width: 90%;
+    height: 40%;
+    flex-shrink: 0;
+    border-radius: 0.875rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.505);
+    margin: auto; /* Memusatkan elemen */
+    margin-top: 0.1rem; /* Menambahkan jarak dari atas */
+}
+.center {
+    border: 5px solid #ffffff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}

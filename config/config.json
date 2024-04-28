@@ -2,16 +2,37 @@
   "development": {
     "database": "tutytyth",
     "host": "satao.db.elephantsql.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "username": "tutytyth",
+    "password": "ovrWyZOZqO-8SnZMfePVNn6ttmAnJbJP",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
   },
   "test": {
     "database": "tutytyth",
     "host": "satao.db.elephantsql.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "username": "tutytyth",
+    "password": "ovrWyZOZqO-8SnZMfePVNn6ttmAnJbJP",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
     "database": "tutytyth",
     "host": "satao.db.elephantsql.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "username": "tutytyth",
+    "password": "ovrWyZOZqO-8SnZMfePVNn6ttmAnJbJP",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
